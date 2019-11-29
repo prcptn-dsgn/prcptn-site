@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f218f9c-f9bd-452c-83ad-c79ff6a13666" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/wavy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/website.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts-presets/quest.html" beforeDir="false" afterPath="$PROJECT_DIR$/scripts-presets/quest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,15 +32,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RGUXvoFTlST7HAX57afW26MGPX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../new site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\erick\Documents\prcptn\prcptn site\templates" />
       <recent name="C:\Users\erick\Documents\prcptn\website\scripts-presets" />
       <recent name="C:\Users\erick\Documents\prcptn\website" />
       <recent name="C:\Users\erick\Documents\prcptn\website\templates" />
@@ -79,6 +86,9 @@
       <workItem from="1574709882989" duration="6000" />
       <workItem from="1574744320596" duration="43000" />
       <workItem from="1574814665494" duration="26000" />
+      <workItem from="1574823754372" duration="770000" />
+      <workItem from="1574882595314" duration="6106000" />
+      <workItem from="1574998995845" duration="881000" />
     </task>
     <servers />
   </component>

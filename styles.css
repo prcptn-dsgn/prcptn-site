@@ -30,7 +30,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -50,7 +50,7 @@ h2 {
 
 .cont {
     width: 70vw;
-    height: 80vh;
+    min-height: 80vh;
     margin: 10vh 15vw;
     box-sizing: border-box;
     padding: 7vh 6vw;
@@ -170,7 +170,7 @@ button.btn {
 .product-card {
     margin-top: 1vw;
     background: var(--grey);
-    width: 20vw;
+    width: 18vw;
     padding: 1vw 1.5vw;
     padding-top: .6vw;
     display: inline-block;
@@ -180,6 +180,7 @@ button.btn {
     position: relative;
     bottom: 0;
     transition: box-shadow .5s, bottom .5s;
+    margin-right: 1vw;
 }
 
 .product-card:hover {
