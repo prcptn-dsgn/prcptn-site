@@ -205,6 +205,7 @@ p {
 
 .template-card {
     padding: 0 !important;
+    overflow: hidden;
 }
 
 .template-thumb {
