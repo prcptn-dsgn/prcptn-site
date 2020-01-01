@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f218f9c-f9bd-452c-83ad-c79ff6a13666" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/thumbs/shapes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/shapes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/rippl.html" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/rippl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/flare.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/flare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mountains.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mountains.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nature.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/retrowave-panzoid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/retrowave-panzoid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/wavy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wavy.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +39,11 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -90,6 +98,9 @@
       <workItem from="1575429529687" duration="601000" />
       <workItem from="1575516808215" duration="90000" />
       <workItem from="1576336613069" duration="71000" />
+      <workItem from="1577662874146" duration="19000" />
+      <workItem from="1577908698125" duration="446000" />
+      <workItem from="1577909200981" duration="22000" />
     </task>
     <servers />
   </component>
@@ -108,5 +119,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
