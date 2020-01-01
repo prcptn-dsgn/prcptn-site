@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f218f9c-f9bd-452c-83ad-c79ff6a13666" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/thumbs/shapes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/shapes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/flare.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/flare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mountains.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mountains.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nature.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/retrowave-panzoid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/retrowave-panzoid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wavy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wavy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shapes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shapes.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +94,7 @@
       <workItem from="1577662874146" duration="19000" />
       <workItem from="1577908698125" duration="446000" />
       <workItem from="1577909200981" duration="22000" />
+      <workItem from="1577909284314" duration="9000" />
     </task>
     <servers />
   </component>
