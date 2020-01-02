@@ -1,1 +1,1 @@
-flare,mountains,nature,wavy,retrowave Panzoid
+flare,mountains,nature,wavy,retrowave Panzoid,cube,shapes

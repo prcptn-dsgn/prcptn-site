@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f218f9c-f9bd-452c-83ad-c79ff6a13666" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/cube.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shapes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shapes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list_templates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/list_templates.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +97,8 @@
       <workItem from="1577908698125" duration="446000" />
       <workItem from="1577909200981" duration="22000" />
       <workItem from="1577909284314" duration="9000" />
+      <workItem from="1577923954378" duration="51000" />
+      <workItem from="1577929537147" duration="188000" />
     </task>
     <servers />
   </component>
