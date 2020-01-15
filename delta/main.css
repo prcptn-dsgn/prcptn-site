@@ -42,7 +42,9 @@ input[type="text"]:focus {
 }
 
 .hovfx {
-    transition: background-color 0.4s, 0.4s transform, 0.4s box-shadow;
+    transition: background-color 0.4s,
+        0.4s transform cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        0.4s box-shadow;
 }
 
 .colors,
@@ -83,17 +85,51 @@ body {
 
 .pos-down {
     position: relative;
-    transform: translateY(.2vh);
+    transform: translateY(.4vh);
 }
 
 i {
-    transition: 0.1s;
+    transition: 0.2s transform;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
 
+}
+
+i:hover {
+    transform: translateY(-.4vh);
+}
+
+i:active {
+    transform: translateY(.4vh);
 }
 
 .icon {
     width: 5vw;
     text-align: center;
     display: inline-block;
+}
+
+.group {
+    width: 35vw;
+    height: 10vw;
+    border-radius: 1vw;
+    margin:2vw;
+    overflow: hidden;
+    box-shadow: 0px 2vw 5vw rgba(0, 0, 0, 0.103);
+    display: inline-block;
+
+}
+
+.color {
+    width: 7vw;
+    height: 10vw;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    float: left ;
+    top: 0;
+}
+.palettes{
+    width: 80vw;
+    margin: auto;
 }
