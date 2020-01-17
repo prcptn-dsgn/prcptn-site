@@ -19,6 +19,8 @@ var val = [
 var nam = [
 ];
 function refreshCookies() {
+    val = [];
+    nam = [];
     var cookies = get_cookies_array();
 
     for (var name in cookies) {
@@ -27,32 +29,57 @@ function refreshCookies() {
     }
     val.pop();
     nam.pop();
+    val.shift();
+    nam.shift();
+    console.log(val);
     console.log(nam);
 }
 refreshCookies();
 
 function load() {
-    for (let i = 0; i < val.length; i++) {
+document.getElementById("main").innerHTML = document.getElementById("defaultCont").innerHTML;
+   for (let i = 0; i < val.length; i++) {
         const code = val[i];
         const name = nam[i];
-        var h1 = code.substring(0, 6);
-        var h2 = code.substring(6, 12);
-        var h3 = code.substring(12, 18);
-        var h4 = code.substring(18, 24);
-        var h5 = code.substring(24, 30);
-        createDiv(h1,h2,h3,h4,h5);
-        console.log(code);
+        if(code.length >=30){
+
+            var h1 = code.substring(0, 6);
+            var h2 = code.substring(6, 12);
+            var h3 = code.substring(12, 18);
+            var h4 = code.substring(18, 24);
+            var h5 = code.substring(24, 30);
+            createDiv(h1, h2, h3, h4, h5, name);
+            console.log(code);
+        }
     }
 
 }
-function createDiv(h1, h2, h3, h4, h5) {
+function createDiv(h1, h2, h3, h4, h5, name) {
+    
     document.getElementById("main").innerHTML =
-        '<a href="index.html#'+h1+h2+h3+h4+h5+'"><div class="group"><div class="color" style="background: ' + "#" + h1 +
+        '<div class="group"><i class="fas fa-times delete" onclick="deleteCookie(' + "'" + name + "'"+ ')"></i><a href="index.html#' + h1 + h2 + h3 + h4 + h5 + '"><div class="color" style="background: ' + "#" + h1 +
         ';"></div><div class="color" style="background: ' + "#" + h2 +
         ';"></div><div class="color" style="background: ' + "#" + h3 +
         ';"></div><div class="color" style="background: ' + "#" + h4 +
         ';"></div><div class="color" style="background: ' + "#" + h5 +
-        ';"></div></div>' + 
+        ';"></div></a></div>' + 
         document.getElementById("main").innerHTML;
 }
-console.log(val);
+
+function deleteCookie(name){
+    document.cookie = name + "= 0";
+    refreshCookies();
+    load();
+}
+function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+    refreshCookies();
+    load();
+}

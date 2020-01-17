@@ -1,3 +1,11 @@
+:root{
+    --bgc:#363636d0;
+    /*#ebebebd0, #363636d0*/
+    --col: white;       
+    /*#808080, white*/
+    --bg:#1f1f1f;
+    /*white, #160f1d*/
+}
 input[type="color"] {
     display: block;
     opacity: 0;
@@ -11,8 +19,8 @@ input[type="color"] {
 input[type="text"] {
     display: block;
     width: 12.5vw;
-    background: #ebebebd0;
-    color: #808080;
+    background: var(--bgc);
+    color: var(--col);
     border: none;
     border-radius: 0vw 0vw 1.2vw 1.2vw;
     padding-top: 1vw;
@@ -52,7 +60,6 @@ input[type="text"]:focus {
 .settings {
     width: fit-content;
     margin: auto;
-    color: #808080;
 }
 
 .settings {
@@ -82,6 +89,8 @@ input[type="text"]:focus {
 body {
     font-family: 'Varela Round', sans-serif;
     font-size: 2vw;
+    background-color: var(--bg);
+    color: var(--col);
 }
 
 .pos-down {
@@ -116,9 +125,16 @@ i:active {
     border-radius: 1vw;
     margin:2vw;
     overflow: hidden;
-    box-shadow: 0px 2vw 5vw rgba(0, 0, 0, 0.103);
     display: inline-block;
+    transition: background-color 0.4s,
+    0.4s transform cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    0.4s box-shadow,
+    0.4s color;
 
+}
+.group:hover{
+    transform: translateY(-1.5vh);
+    
 }
 
 .groupNS {
@@ -128,14 +144,15 @@ i:active {
     margin:2vw;
     overflow: hidden;
     display: inline-block;
-    color: #808080;
+    color:var(--col)
 
 }
-.fa-plus{
+.plus{
     transform: translate(16.5vw, 4vw);
 }
-.fa-plus:hover{
+.plus:hover{
     transform: translate(16.5vw, 3.6vw);
+    text-shadow: 0px 2vw 5vw rgba(0, 0, 0, 0.274);
 }
 .color {
     width: 7vw;
@@ -145,6 +162,7 @@ i:active {
     margin: 0;
     float: left ;
     top: 0;
+    transition: 0.4s background;
 }
 .palettes{
     width: 80vw;
@@ -156,10 +174,25 @@ a{
 .delete{
     position: absolute;
     transform: translate(32vw, 7vw);
-    color: rgba(255, 255, 255, 0.247);
+    color: #ffffff62;
 }
 .delete:hover{
     position: absolute;
     transform: translate(32vw, 6.8vw);
-    color: rgba(255, 255, 255, 0.651);
+    color: #ffffffa6;
+}
+.settingsP{
+    position: absolute;
+    width: 10vw;
+    height: 35vw;
+    border-radius: 1vw;
+    color: var(--col);
+}
+.settIcon{
+    height: 4vw;
+    width: 10vw;
+    transform: translate(6vw, 5vw);
+}
+.settIcon i:hover{
+    transform: translate(-.4vw, 0vw);
 }
