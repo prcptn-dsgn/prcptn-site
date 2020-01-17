@@ -44,7 +44,8 @@ input[type="text"]:focus {
 .hovfx {
     transition: background-color 0.4s,
         0.4s transform cubic-bezier(0.175, 0.885, 0.32, 1.275),
-        0.4s box-shadow;
+        0.4s box-shadow,
+        0.4s color;
 }
 
 .colors,
@@ -89,7 +90,7 @@ body {
 }
 
 i {
-    transition: 0.2s transform;
+    transition: 0.2s transform, 0.2s color;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
 
@@ -120,6 +121,22 @@ i:active {
 
 }
 
+.groupNS {
+    width: 35vw;
+    height: 10vw;
+    border-radius: 1vw;
+    margin:2vw;
+    overflow: hidden;
+    display: inline-block;
+    color: #808080;
+
+}
+.fa-plus{
+    transform: translate(16.5vw, 4vw);
+}
+.fa-plus:hover{
+    transform: translate(16.5vw, 3.6vw);
+}
 .color {
     width: 7vw;
     height: 10vw;
@@ -132,4 +149,17 @@ i:active {
 .palettes{
     width: 80vw;
     margin: auto;
+}
+a{
+    float: left;
+}
+.delete{
+    position: absolute;
+    transform: translate(32vw, 7vw);
+    color: rgba(255, 255, 255, 0.247);
+}
+.delete:hover{
+    position: absolute;
+    transform: translate(32vw, 6.8vw);
+    color: rgba(255, 255, 255, 0.651);
 }
