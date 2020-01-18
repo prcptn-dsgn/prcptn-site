@@ -121,10 +121,10 @@ i:active {
 }
 
 .group {
-    width: 35vw;
-    height: 10vw;
+    width: 20vw;
+    height: 5vw;
     border-radius: 1vw;
-    margin:2.5vw;
+    margin:.5vw 1vw;
     overflow: hidden;
     display: inline-block;
     transition: background 0.4s,
@@ -139,24 +139,25 @@ i:active {
 }
 
 .groupNS {
-    width: 35vw;
-    height: 10vw;
+    width: 20vw;
+    height: 5vw;
     border-radius: 1vw;
-    margin:2.5vw;
+    margin:.5vw 1vw;
     overflow: hidden;
     display: inline-block;
-    color:var(--col)
+    color:var(--col);
+    text-align: center;
 
 }
 .plus{
-    transform: translate(16.5vw, 4vw);
+    transform: translate(0vw, 1.6vw);
 }
 .plus:hover{
-    transform: translate(16.5vw, 3.6vw);
+    transform: translate(0vw, 1.2vw);
     text-shadow: 0px 2vw 5vw rgba(0, 0, 0, 0.274);
 }
 .color {
-    width: 7vw;
+    width: 4vw;
     height: 10vw;
     display: inline-block;
     padding: 0;
@@ -166,7 +167,7 @@ i:active {
     transition: 0.4s background;
 }
 .palettes{
-    width: 80vw;
+    width: 66vw;
     margin: auto;
 }
 a{
@@ -174,18 +175,22 @@ a{
 }
 .delete{
     position: absolute;
-    transform: translate(32vw, 7vw);
-    color: #ffffff62;
+    transform: translate(17.3vw, 1.6vw);
+    color: #ffffff;
+    opacity: 38%;
+    transition: 0.2s transform, 0.2s opacity;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .delete:hover{
     position: absolute;
-    transform: translate(32vw, 6.8vw);
-    color: #ffffffa6;
+    transform: translate(17.3vw, 1.2vw);
+    color: #ffffff;
+    opacity: 65%;
 }
 .settingsP{
     position: absolute;
     width: 10vw;
-    height: 35vw;
+    height: 12vw;
     border-radius: 1vw;
     color: var(--col);
     transition: top 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -193,7 +198,7 @@ a{
 .settIcon{
     height: 4vw;
     width: 10vw;
-    transform: translate(6vw, 5vw);
+    transform: translate(6vw, 0vw);
 }
 .settIcon i:hover{
     transform: translate(0vw, -.4vw);
@@ -208,4 +213,5 @@ a{
     width: 30vw;
     text-align: center;
     margin-top:10vh;
+    margin-bottom:5vh;
 }
