@@ -1,3 +1,4 @@
+var mode = "light";
 var checked = false;
 var faved = false;
 var hDif = {
@@ -452,6 +453,7 @@ function load() {
         colorI5.value = "#" + hex.c5;
     }
     getCols();
+    updateMode();
 }
 function copyUrl() {
     var cI1 = document.getElementById("col1").value.substring(1, 7);
@@ -546,7 +548,12 @@ function deleteAllCookies() {
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
 }
-function switchMode() {
+if(getCookie("mode") == null){
+    document.cookie = 'mode = light';
+}
+console.log(document.cookie);
+mode = getCookie("mode");
+function switchMode(){
     if (mode == "light") {
         mode = "dark";
         updateMode();
@@ -558,6 +565,7 @@ function switchMode() {
         document.cookie = 'mode = light';
 
     }
+    console.log(document.cookie);
 }
 function getCookie(cname) {
     var name = cname + "=";
@@ -572,11 +580,9 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return "";
+    return null;
 }
-mode = getCookie("mode");
-updateMode();
-function updateMode() {
+function updateMode(){
     if (mode == "light") {
 
         document.documentElement.style.setProperty('--bgc', '#363636d0');

@@ -54,6 +54,8 @@ function load() {
         }
     }
     getScrollX()
+    
+updateMode();
 
 }
 function createDiv(h1, h2, h3, h4, h5, name) {
@@ -85,6 +87,10 @@ function deleteAllCookies() {
     refreshCookies();
     load();
 }
+if(getCookie("mode") == null){
+    document.cookie = 'mode = light';
+}
+mode = getCookie("mode");
 function switchMode(){
     if (mode == "light") {
         mode = "dark";
@@ -111,10 +117,8 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return "";
+    return null;
 }
-mode = getCookie("mode");
-updateMode();
 function updateMode(){
     if (mode == "light") {
 
@@ -133,6 +137,6 @@ function updateMode(){
 }
 function getScrollX(){
     var scroll = window.scrollY;
-    var goalVH = scroll / window.innerHeight * 100;
+    var goalVH = scroll / window.innerHeight * 100 + 10;
     document.getElementById("settings").style.top = goalVH + "vh";
 }

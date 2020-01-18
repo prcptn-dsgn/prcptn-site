@@ -100,7 +100,7 @@ body {
 }
 
 i {
-    transition: 0.2s transform, 0.2s color;
+    transition: 0.2s transform;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
 
@@ -124,7 +124,7 @@ i:active {
     width: 35vw;
     height: 10vw;
     border-radius: 1vw;
-    margin:2vw;
+    margin:2.5vw;
     overflow: hidden;
     display: inline-block;
     transition: background 0.4s,
@@ -142,7 +142,7 @@ i:active {
     width: 35vw;
     height: 10vw;
     border-radius: 1vw;
-    margin:2vw;
+    margin:2.5vw;
     overflow: hidden;
     display: inline-block;
     color:var(--col)
@@ -188,7 +188,6 @@ a{
     height: 35vw;
     border-radius: 1vw;
     color: var(--col);
-    top:150vh;
     transition: top 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .settIcon{
@@ -201,4 +200,12 @@ a{
 }
 .settIcon i:active {
     transform: translate(0vw, .4vw);
+}
+.header{
+    font-family: 'montserrat', sans-serif;
+    font-size: 3vw;
+    margin: auto;
+    width: 30vw;
+    text-align: center;
+    margin-top:10vh;
 }
