@@ -1,3 +1,4 @@
+var mode = "light";
 function get_cookies_array() {
 
     var cookies = {};
@@ -37,11 +38,11 @@ function refreshCookies() {
 refreshCookies();
 
 function load() {
-document.getElementById("main").innerHTML = document.getElementById("defaultCont").innerHTML;
-   for (let i = 0; i < val.length; i++) {
+    document.getElementById("main").innerHTML = document.getElementById("defaultCont").innerHTML;
+    for (let i = 0; i < val.length; i++) {
         const code = val[i];
         const name = nam[i];
-        if(code.length >=30){
+        if (code.length >= 30) {
 
             var h1 = code.substring(0, 6);
             var h2 = code.substring(6, 12);
@@ -52,21 +53,22 @@ document.getElementById("main").innerHTML = document.getElementById("defaultCont
             console.log(code);
         }
     }
+    getScrollX()
 
 }
 function createDiv(h1, h2, h3, h4, h5, name) {
-    
+
     document.getElementById("main").innerHTML =
-        '<div class="group"><i class="fas fa-times delete" onclick="deleteCookie(' + "'" + name + "'"+ ')"></i><a href="index.html#' + h1 + h2 + h3 + h4 + h5 + '"><div class="color" style="background: ' + "#" + h1 +
+        '<div class="group"><i class="fas fa-times delete" onclick="deleteCookie(' + "'" + name + "'" + ')"></i><a href="index.html#' + h1 + h2 + h3 + h4 + h5 + '"><div class="color" style="background: ' + "#" + h1 +
         ';"></div><div class="color" style="background: ' + "#" + h2 +
         ';"></div><div class="color" style="background: ' + "#" + h3 +
         ';"></div><div class="color" style="background: ' + "#" + h4 +
         ';"></div><div class="color" style="background: ' + "#" + h5 +
-        ';"></div></a></div>' + 
+        ';"></div></a></div>' +
         document.getElementById("main").innerHTML;
 }
 
-function deleteCookie(name){
+function deleteCookie(name) {
     document.cookie = name + "= 0";
     refreshCookies();
     load();
@@ -82,4 +84,55 @@ function deleteAllCookies() {
     }
     refreshCookies();
     load();
+}
+function switchMode(){
+    if (mode == "light") {
+        mode = "dark";
+        updateMode();
+        document.cookie = 'mode = dark';
+
+    } else if (mode == "dark") {
+        mode = "light";
+        updateMode();
+        document.cookie = 'mode = light';
+
+    }
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+mode = getCookie("mode");
+updateMode();
+function updateMode(){
+    if (mode == "light") {
+
+        document.documentElement.style.setProperty('--bgc', '#363636d0');
+        document.documentElement.style.setProperty('--col', 'white');
+        document.documentElement.style.setProperty('--bg', '#160f1d');
+        document.getElementById("sunIcon").classList.replace("fa-moon", "fa-sun");
+
+    } else if (mode == "dark") {
+        document.documentElement.style.setProperty('--bgc', '#ebebebd0');
+        document.documentElement.style.setProperty('--col', '#808080');
+        document.documentElement.style.setProperty('--bg', 'white');
+        document.getElementById("sunIcon").classList.replace("fa-sun", "fa-moon");
+
+    }
+}
+function getScrollX(){
+    var scroll = window.scrollY;
+    var goalVH = scroll / window.innerHeight * 100;
+    document.getElementById("settings").style.top = goalVH + "vh";
 }

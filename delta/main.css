@@ -1,9 +1,9 @@
 :root{
-    --bgc:#363636d0;
+    --bgc:#ebebebd0;
     /*#ebebebd0, #363636d0*/
-    --col: white;       
+    --col: #808080;       
     /*#808080, white*/
-    --bg:#1f1f1f;
+    --bg:white;
     /*white, #160f1d*/
 }
 input[type="color"] {
@@ -41,7 +41,7 @@ input[type="text"]:focus {
     width: 12.5vw;
     margin: .35vw;
     border-radius: 1.2vw 1.2vw 1.2vw 1.2vw;
-    transition: background-color 0.4s;
+    transition: background 0.4s;
 }
 
 .hovfx:hover {
@@ -50,7 +50,7 @@ input[type="text"]:focus {
 }
 
 .hovfx {
-    transition: background-color 0.4s,
+    transition: background 0.4s,
         0.4s transform cubic-bezier(0.175, 0.885, 0.32, 1.275),
         0.4s box-shadow,
         0.4s color;
@@ -89,8 +89,9 @@ input[type="text"]:focus {
 body {
     font-family: 'Varela Round', sans-serif;
     font-size: 2vw;
-    background-color: var(--bg);
+    background: var(--bg);
     color: var(--col);
+    transition: background 0.4s, color 0.4s;
 }
 
 .pos-down {
@@ -126,7 +127,7 @@ i:active {
     margin:2vw;
     overflow: hidden;
     display: inline-block;
-    transition: background-color 0.4s,
+    transition: background 0.4s,
     0.4s transform cubic-bezier(0.175, 0.885, 0.32, 1.275),
     0.4s box-shadow,
     0.4s color;
@@ -187,6 +188,8 @@ a{
     height: 35vw;
     border-radius: 1vw;
     color: var(--col);
+    top:150vh;
+    transition: top 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .settIcon{
     height: 4vw;
@@ -194,5 +197,8 @@ a{
     transform: translate(6vw, 5vw);
 }
 .settIcon i:hover{
-    transform: translate(-.4vw, 0vw);
+    transform: translate(0vw, -.4vw);
+}
+.settIcon i:active {
+    transform: translate(0vw, .4vw);
 }

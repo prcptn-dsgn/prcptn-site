@@ -546,3 +546,49 @@ function deleteAllCookies() {
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
 }
+function switchMode() {
+    if (mode == "light") {
+        mode = "dark";
+        updateMode();
+        document.cookie = 'mode = dark';
+
+    } else if (mode == "dark") {
+        mode = "light";
+        updateMode();
+        document.cookie = 'mode = light';
+
+    }
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+mode = getCookie("mode");
+updateMode();
+function updateMode() {
+    if (mode == "light") {
+
+        document.documentElement.style.setProperty('--bgc', '#363636d0');
+        document.documentElement.style.setProperty('--col', 'white');
+        document.documentElement.style.setProperty('--bg', '#160f1d');
+        document.getElementById("sunIcon").classList.replace("fa-moon", "fa-sun");
+
+    } else if (mode == "dark") {
+        document.documentElement.style.setProperty('--bgc', '#ebebebd0');
+        document.documentElement.style.setProperty('--col', '#808080');
+        document.documentElement.style.setProperty('--bg', 'white');
+        document.getElementById("sunIcon").classList.replace("fa-sun", "fa-moon");
+
+    }
+}

@@ -18,12 +18,10 @@
     <link rel="stylesheet" href="animate.css" />
   </head>
 
-  <body onload="load()">
-    <div class="settingsP">
-      <div class=" settIcon"><i class="fas fa-plus"></i></div>
-      <div class=" settIcon"><i class="fas fa-trash-alt"></i></div>
-      <div class=" settIcon"><i class="fas fa-plus"></i></div>
-      <div class=" settIcon"><i class="fas fa-sun" id="sunIcon"></i></div>
+  <body onload="load()" onscroll="getScrollX()">
+    <div class="settingsP" id="settings">
+      <div class=" settIcon"><i class="fas fa-plus" onclick="window.location.href = 'index.html'"></i></div>
+      <div class=" settIcon" onclick="switchMode()"><i class="fas fa-sun" id="sunIcon"></i></div>
       <div class=" settIcon">
         <i class="fas fa-trash-alt" onclick="deleteAllCookies()"></i>
       </div>
