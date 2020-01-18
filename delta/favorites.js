@@ -137,7 +137,7 @@ function updateMode(){
 }
 function getScrollX(){
     var scroll = window.scrollY;
-    var goalVH = scroll / window.innerHeight * 100 + 40;
+    var goalVH = scroll / window.innerHeight * 100 + 36;
     document.getElementById("settings").style.top = goalVH + "vh";
 }
 var getContrast = function (hexcolor){
@@ -166,3 +166,7 @@ var getContrast = function (hexcolor){
 	return (yiq >= 128) ? 'black' : 'white';
 
 };
+function refreshPalettes(){
+    refreshCookies();
+    load();
+}

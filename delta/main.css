@@ -190,7 +190,7 @@ a{
 .settingsP{
     position: absolute;
     width: 10vw;
-    height: 12vw;
+    height: 16vw;
     border-radius: 1vw;
     color: var(--col);
     transition: top 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -201,10 +201,10 @@ a{
     transform: translate(6vw, 0vw);
 }
 .settIcon i:hover{
-    transform: translate(0vw, -.4vw);
+    transform: translate(0vw, -.2vw);
 }
 .settIcon i:active {
-    transform: translate(0vw, .4vw);
+    transform: translate(0vw, .2vw);
 }
 .header{
     font-family: 'montserrat', sans-serif;
