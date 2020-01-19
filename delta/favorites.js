@@ -1,4 +1,5 @@
 var mode = "light";
+mode = getCookie("mode");
 function get_cookies_array() {
 
     var cookies = {};
@@ -28,10 +29,6 @@ function refreshCookies() {
         val.push(cookies[name]);
         nam.push(name);
     }
-    val.pop();
-    nam.pop();
-    val.shift();
-    nam.shift();
     console.log(val);
     console.log(nam);
 }
@@ -42,7 +39,7 @@ function load() {
     for (let i = 0; i < val.length; i++) {
         const code = val[i];
         const name = nam[i];
-        if (code.length >= 30) {
+        if (code.length == 30) {
 
             var h1 = code.substring(0, 6);
             var h2 = code.substring(6, 12);
@@ -170,3 +167,4 @@ function refreshPalettes(){
     refreshCookies();
     load();
 }
+setTimeout(function(){ document.body.style.transition = "background 0.4s, color 0.4s" }, 1000);
