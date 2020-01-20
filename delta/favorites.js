@@ -168,3 +168,4 @@ function refreshPalettes(){
     load();
 }
 setTimeout(function(){ document.body.style.transition = "background 0.4s, color 0.4s" }, 1000);
+console.log(document.cookie)
