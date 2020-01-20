@@ -6,6 +6,13 @@
     --bg:white;
     /*white, #160f1d*/
 }
+body{
+    font-family: 'Varela Round', sans-serif;
+    
+}
+input[type="text"]{
+    font-family: 'Varela Round', sans-serif;
+}
 @media screen and (min-width:1200px){
     input[type="color"] {
         display: block;
@@ -27,7 +34,6 @@
         padding-top: 1vw;
         padding-bottom: 1vw;
         text-align: center;
-        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 2vh;
     }
@@ -88,7 +94,6 @@
     }
     
     body {
-        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -237,7 +242,6 @@
         padding-top: 1vw;
         padding-bottom: 1vw;
         text-align: center;
-        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 2vh;
     }
@@ -299,7 +303,6 @@
     }
     
     body {
-        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -451,7 +454,6 @@
         padding-bottom: 1vh;
         height: 2vh;
         text-align: center;
-        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 2vh;
     }
@@ -502,7 +504,6 @@
     }
     
     body {
-        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -654,7 +655,6 @@
         padding-bottom: 1vh;
         height: 2vh;
         text-align: center;
-        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 1.7vh;
     }
@@ -705,7 +705,6 @@
     }
     
     body {
-        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -857,7 +856,6 @@
         padding-bottom: 1vh;
         height: 2vh;
         text-align: center;
-        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 1.7vh;
     }
@@ -908,7 +906,6 @@
     }
     
     body {
-        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
