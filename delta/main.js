@@ -1,3 +1,4 @@
+
 var mode = "light";
 var checked = false;
 var faved = false;
@@ -453,7 +454,7 @@ function load() {
         colorI5.value = "#" + hex.c5;
     }
     getCols();
-    updateMode();
+    updateMode();clload();
 }
 function copyUrl() {
     var cI1 = document.getElementById("col1").value.substring(1, 7);
