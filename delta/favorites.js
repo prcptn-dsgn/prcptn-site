@@ -1,4 +1,3 @@
-
 var mode = "light";
 mode = getCookie("mode");
 function get_cookies_array() {
@@ -169,11 +168,4 @@ function refreshPalettes(){
     load();
 }
 setTimeout(function(){ document.body.style.transition = "background 0.4s, color 0.4s" }, 1000);
-console.log(document.cookie);
-
-Swal.fire({
-    title: 'Error!',
-    text: 'Do you want to continue',
-    icon: 'error',
-    confirmButtonText: 'Cool'
-  })
+console.log(document.cookie)

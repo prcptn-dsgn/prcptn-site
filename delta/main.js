@@ -1,4 +1,3 @@
-
 var mode = "light";
 var checked = false;
 var faved = false;
@@ -454,7 +453,7 @@ function load() {
         colorI5.value = "#" + hex.c5;
     }
     getCols();
-    updateMode();clload();
+    updateMode();
 }
 function copyUrl() {
     var cI1 = document.getElementById("col1").value.substring(1, 7);
@@ -599,3 +598,4 @@ function updateMode(){
 
     }
 }
+setTimeout(function(){ document.body.style.transition = "background 0.4s, color 0.4s" }, 1000);

@@ -6,36 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prcptn Delta</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ee0232d59.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="changelog.css">
-    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700&display=swap" rel="stylesheet">
-
 </head>
 
-<body onload="load();">
+<body onload="load()">
     <div class="main">
         <div class="colors">
             <div class="col-picker-wrapper hovfx swatch1" id="wrap1">
                 <div onchange="swatchUpdate()"><input type="color" name="asd" id="col1" value="#ffe3d7"
-                        onchange="getCols()"></div>
+                        onchange="getCols()"></div onchange="swatchUpdate()">
                 <input type="text" name="" id="tex1" onchange="hexUpdate(1)">
             </div>
             <div class="col-picker-wrapper hovfx swatch2" id="wrap2">
                 <div onchange="swatchUpdate()"><input type="color" name="asd" id="col2" value="#FF9F8C"
-                        onchange="getCols()"></div>
+                        onchange="getCols()"></div onchange="swatchUpdate()">
                 <input type="text" name="" id="tex2" onchange="hexUpdate(2)">
             </div>
             <div class="col-picker-wrapper hovfx swatch3" id="wrap3">
                 <div onchange="swatchUpdate()"><input type="color" name="asda" id="col3" value="#FF5C5C"
-                        onchange="setCols()"></div>
+                        onchange="setCols()"></div onchange="swatchUpdate()">
                 <input type="text" name="" id="tex3" onchange="hexUpdate(3)">
             </div>
             <div class="col-picker-wrapper hovfx swatch4" id="wrap4">
                 <div onchange="swatchUpdate()"><input type="color" name="asd" id="col4" value="#870E48"
-                        onchange="getCols()"></div>
+                        onchange="getCols()"></div onchange="swatchUpdate()">
                 <input type="text" name="" id="tex4" onchange="hexUpdate(4)">
             </div>
             <div class="col-picker-wrapper hovfx swatch5" id="wrap5">
@@ -49,29 +48,11 @@
             <div class="icon"><i class="fas fa-dice animated fast" onclick="rand()" id="randIcon"></i></div>
             <div class="icon"><i class="fas fa-link" onclick="copyUrl()" id="linkIcon"></i></div>
             <div class="icon"><i class="fas fa-file-code" onclick="copyCss()" id="cssIcon"></i></div>
+            <div class="icon"><i class="fas fa-sun" onclick="switchMode()" id="sunIcon"></i></div>
             <div class="icon"><i class="fas fa-heart" onclick="favPalette()" id="starIcon"></i></div>
             <div class="icon"><i class="fas fa-th-large" onclick="window.location.href = 'palettes.html'"></i></div>
         </div>
     </div>
-    <div id="changelog">
-        <div class="cl-wrap">
-            <div class="cl-main">
-                <i class="fas fa-times-circle cl-i" onclick="closecl()"></i>
-                <div class="cl-h">changelog</div>
-                <div class="cl-inner">
-                    <ul>
-                        <li>added settings page for settings (duh)</li>
-                        <li>added smart color mode with colormind api integration</li>
-                        <li>added a version number in settings page</li>
-                        <li>moved the color theme switcher to new settings page</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <script src="changelog.js"></script>
-    <script src="main.js"></script>
 </body>
 
 </html>
