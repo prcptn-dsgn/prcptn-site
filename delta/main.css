@@ -53,6 +53,7 @@ input[type="text"]{
         padding-top: 1vw;
         padding-bottom: 1vw;
         text-align: center;
+        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 2vh;
     }
@@ -113,6 +114,7 @@ input[type="text"]{
     }
     
     body {
+        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -261,6 +263,7 @@ input[type="text"]{
         padding-top: 1vw;
         padding-bottom: 1vw;
         text-align: center;
+        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 2vh;
     }
@@ -322,6 +325,7 @@ input[type="text"]{
     }
     
     body {
+        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -476,6 +480,7 @@ input[type="text"]{
         padding-bottom: 1vh;
         height: 2vh;
         text-align: center;
+        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 2vh;
     }
@@ -526,6 +531,7 @@ input[type="text"]{
     }
     
     body {
+        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -680,6 +686,7 @@ input[type="text"]{
         padding-bottom: 1vh;
         height: 2vh;
         text-align: center;
+        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 1.7vh;
     }
@@ -730,6 +737,7 @@ input[type="text"]{
     }
     
     body {
+        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
@@ -884,6 +892,7 @@ input[type="text"]{
         padding-bottom: 1vh;
         height: 2vh;
         text-align: center;
+        font-family: 'Varela Round', sans-serif;
         outline: none;
         font-size: 1.7vh;
     }
@@ -934,6 +943,7 @@ input[type="text"]{
     }
     
     body {
+        font-family: 'Varela Round', sans-serif;
         font-size: 2vw;
         background: var(--bg);
         color: var(--col);
