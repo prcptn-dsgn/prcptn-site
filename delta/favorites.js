@@ -171,9 +171,13 @@ function refreshPalettes(){
 setTimeout(function(){ document.body.style.transition = "background 0.4s, color 0.4s" }, 1000);
 console.log(document.cookie);
 
-Swal.fire({
-    title: 'Error!',
-    text: 'Do you want to continue',
-    icon: 'error',
-    confirmButtonText: 'Cool'
-  })
+tippy('[data-tippy-content]',{
+    
+    arrow:true,
+    delay: [500, 0],
+    inertia: true,
+    placement: 'right',
+    theme: 'delta',
+    animation: 'rotate',
+    arrowType: 'roundArrow'
+});
