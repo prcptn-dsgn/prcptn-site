@@ -21,7 +21,7 @@
         <div class="colors">
             <div class="col-picker-wrapper hovfx swatch1" id="wrap1">
                 <div onchange="swatchUpdate()"><input type="color" name="asd" id="col1" value="#ffe3d7"
-                        onchange="getCols()"></div> <div class="s-icon"><i class="fas fa-lock-open" onclick="lockSwatch(1)" id="lockIcon1" data-tippy-content="lock color (smart palette only)"></i></div>
+                        onchange="getCols()"></div> <div class="s-icon"><i class="fas fa-lock-open" onclick="lockSwatch(1)" id="lockIcon1" style="color:black" data-tippy-content="lock color (smart palette only)"></i></div>
                 <input type="text" name="" id="tex1" onchange="hexUpdate(1)">
             </div>
             <div class="col-picker-wrapper hovfx swatch2" id="wrap2">
@@ -56,23 +56,7 @@
             </div>
         </div>
     </div>
-    <div id="changelog">
-        <div class="cl-wrap">
-            <div class="cl-main">
-                <i class="fas fa-times-circle cl-i" onclick="closecl()"></i>
-                <div class="cl-h">changelog</div>
-                <div class="cl-inner">
-                    <ul>
-                        <li>added settings page for settings (duh)</li>
-                        <li>added smart color mode with colormind api integration</li>
-                        <li>added a version number in settings page</li>
-                        <li>moved the color theme switcher to new settings page</li>
-                    </ul>
-                </div>
 
-            </div>
-        </div>
-    </div>
     
     <script src="https://unpkg.com/popper.js@1"></script>
     <script src="https://unpkg.com/tippy.js@5"></script>

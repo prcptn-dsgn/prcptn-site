@@ -16,6 +16,14 @@ input[type="text"] {
     font-family: 'Varela Round', sans-serif;
 }
 
+.clickable {
+    box-shadow: inset 0 -.5vh rgb(111, 0, 255);
+    transition: 0.4s box-shadow cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.clickable:hover{
+    box-shadow: inset 0 -3vh rgb(111, 0, 255);
+    
+}
 .settingsS {
     width: fit-content;
     height: 16vw;
@@ -25,6 +33,12 @@ input[type="text"] {
 
 .smallText {
     font-size: 2.6vh;
+    display: inline;
+    padding-left: 2vw;
+}
+
+.smallrText {
+    font-size: 1.3vh;
     display: inline;
     padding-left: 2vw;
 }
@@ -46,6 +60,7 @@ input[type="text"] {
 .tippy-tooltip.delta-theme[data-placement^='bottom'] .tippy-arrow {
     border-bottom-color: var(--col);
 }
+
 .tippy-tooltip.delta-theme[data-placement^='right'] .tippy-arrow {
     border-right-color: var(--col);
 }
@@ -57,12 +72,26 @@ input[type="text"] {
 
 .tippy-tooltip[data-animation='rotate'][data-state='hidden'][data-placement^='right'] {
     opacity: 0;
-    transform: translate( 5%, 0);
+    transform: translate(5%, 0);
 }
-.s-icon{
+
+.s-icon {
     position: absolute;
+    opacity: .3;
+    transition: 0.2s opacity, 0.2s color;
 }
+
+.s-icon:hover {
+    opacity: .6;
+
+}
+
 @media screen and (min-width:1200px) {
+    .s-icon {
+        font-size: 3vh;
+        transform: translate(10vw, -2.25vw);
+    }
+
     input[type="color"] {
         display: block;
         opacity: 0;
@@ -287,6 +316,11 @@ input[type="text"] {
 }
 
 @media screen and (max-width:1200px) and (orientation:landscape) {
+    .s-icon {
+        font-size: 2.5vh;
+        transform: translate(11.5vw, -3vw);
+    }
+
     input[type="color"] {
         display: block;
         opacity: 0;
@@ -515,11 +549,16 @@ input[type="text"] {
 }
 
 @media screen and (orientation:portrait) and (min-width:700px) {
+    .s-icon {
+        font-size: 2.5vh;
+        transform: translate(15vw, .5vw);
+    }
+
     input[type="color"] {
         display: block;
         opacity: 0;
         width: 99vw;
-        height: 14vh;
+        height: 14.5vh;
         border: none;
         background: none;
 
@@ -556,14 +595,12 @@ input[type="text"] {
     }
 
 
-    .colors,
-    .settings {
+    .colors {
         width: fit-content;
         margin: auto;
     }
 
     .settings {
-        margin-top: 3vh;
         -webkit-user-select: none;
         /* Safari */
         -moz-user-select: none;
@@ -574,8 +611,12 @@ input[type="text"] {
         /* Standard */
         font-size: 3vh;
         position: absolute;
-        left: 50%;
-        transform: translate(-50%);
+        right: 0;
+        top: 0;
+        width: 7vw;
+        background-color: var(--bgc);
+        padding-top: 2vh;
+        height: 91.6vh;
     }
 
     .main {
@@ -619,6 +660,7 @@ input[type="text"] {
 
     .icon {
         width: 7vw;
+        height: 5vh;
         text-align: center;
         display: inline-block;
     }
@@ -737,11 +779,16 @@ input[type="text"] {
 }
 
 @media screen and (max-width:700px) and (orientation:portrait) and (min-width:400px) {
+    .s-icon {
+        font-size: 2.5vh;
+        transform: translate(21vw, .5vw);
+    }
+
     input[type="color"] {
         display: block;
         opacity: 0;
         width: 99vw;
-        height: 14vh;
+        height: 14.5vh;
         border: none;
         background: none;
 
@@ -778,14 +825,12 @@ input[type="text"] {
     }
 
 
-    .colors,
-    .settings {
+    .colors {
         width: fit-content;
         margin: auto;
     }
 
     .settings {
-        margin-top: 3vh;
         -webkit-user-select: none;
         /* Safari */
         -moz-user-select: none;
@@ -796,8 +841,12 @@ input[type="text"] {
         /* Standard */
         font-size: 3vh;
         position: absolute;
-        left: 50%;
-        transform: translate(-50%);
+        top: 0;
+        right: 0;
+        padding-top: 2.5vh;
+        background-color: var(--bgc);
+        height: 91.1vh;
+        width: 8vw;
     }
 
     .main {
@@ -843,6 +892,7 @@ input[type="text"] {
         width: 8vw;
         text-align: center;
         display: inline-block;
+        height: 5vh;
     }
 
     .group {
@@ -959,11 +1009,16 @@ input[type="text"] {
 }
 
 @media screen and (max-width:400px) and (orientation:portrait) {
+    .s-icon {
+        font-size: 2.5vh;
+        transform: translate(33vw, .5vw);
+    }
+
     input[type="color"] {
         display: block;
         opacity: 0;
         width: 99vw;
-        height: 14vh;
+        height: 14.5vh;
         border: none;
         background: none;
 
@@ -1000,14 +1055,12 @@ input[type="text"] {
     }
 
 
-    .colors,
-    .settings {
+    .colors {
         width: fit-content;
         margin: auto;
     }
 
     .settings {
-        margin-top: 3vh;
         -webkit-user-select: none;
         /* Safari */
         -moz-user-select: none;
@@ -1018,8 +1071,12 @@ input[type="text"] {
         /* Standard */
         font-size: 3vh;
         position: absolute;
-        left: 50%;
-        transform: translate(-50%);
+        width: 10vw;
+        top: 0;
+        right: 0;
+        background-color: var(--bgc);
+        padding-top: 2.5vh;
+        height: 91.1vh;
     }
 
     .main {
@@ -1065,6 +1122,7 @@ input[type="text"] {
         width: 10vw;
         text-align: center;
         display: inline-block;
+        height: 6vh;
     }
 
     .group {
