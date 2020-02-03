@@ -168,4 +168,15 @@ function refreshPalettes(){
     load();
 }
 setTimeout(function(){ document.body.style.transition = "background 0.4s, color 0.4s" }, 1000);
-console.log(document.cookie)
+console.log(document.cookie);
+
+tippy('[data-tippy-content]',{
+    
+    arrow:true,
+    delay: [500, 0],
+    inertia: true,
+    placement: 'right',
+    theme: 'delta',
+    animation: 'rotate',
+    arrowType: 'roundArrow'
+});
