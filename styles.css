@@ -242,3 +242,22 @@ p {
     border: .27vw solid var(--cyan);
     border-radius: 50vw;
 }
+input[type=text], textarea, input[type=email]{
+    border: .3vw solid var(--purple);
+    padding: .5vw;
+    margin: .2vw;
+}
+input[type=submit]{
+    border: .3vw solid var(--purple);
+    padding: .5vw;
+    margin: .2vw;
+    background: var(--purple);
+    color:white;
+    transition: 0.4s;
+}
+input[type=submit]:hover {
+    border: .3vw solid var(--purple);
+    box-shadow: 0 0.5vw rgb(115, 65, 175);
+    transform: translateY(-0.5vw);
+    background: var(--purple);
+}
