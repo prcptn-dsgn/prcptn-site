@@ -249,15 +249,15 @@ input[type=text], textarea, input[type=email]{
 }
 input[type=submit]{
     border: .3vw solid var(--purple);
+    color: var(--dark);
     padding: .5vw;
     margin: .2vw;
     background: var(--purple);
-    color:white;
+    color: var(--light);
     transition: 0.4s;
+    cursor: pointer;
 }
 input[type=submit]:hover {
-    border: .3vw solid var(--purple);
-    box-shadow: 0 0.5vw rgb(115, 65, 175);
-    transform: translateY(-0.5vw);
-    background: var(--purple);
+    color: var(--purple);
+    background: var(--light);
 }
